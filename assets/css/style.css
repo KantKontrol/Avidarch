@@ -1,22 +1,37 @@
-html, body {
-    height: 100%;
+:root {
+    --bg-img: url(../img/Background.png);
+    --section-height: 1080px;
+}
+
+body, html{
     width: 100%;
 }
 
 
+.navbar {
+    background-image: var(--bg-img);
+}
 
 .home {
-
+    background-image: var(--bg-img);
+    height: var(--section-height);
+    border-bottom: 2px solid red;
 }
 
 .about {
-
+    background-image: var(--bg-img);
+    height: var(--section-height);
+    border-bottom: 2px solid blue;
 }
 
-.portfolio {
-
+.projects {
+    background-image: var(--bg-img);
+    height: var(--section-height);
+    border-bottom: 2px solid green;
 }
 
 .contact {
-    
+    background-image: var(--bg-img);
+    height: var(--section-height);
+    border-bottom: 2px solid orange;
 }
