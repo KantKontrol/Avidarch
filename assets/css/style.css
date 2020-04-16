@@ -2,19 +2,22 @@
     --bg-img-stripes: url(../img/BackgroundW_Stripes.png);
     --bg-img: url(../img/Background.png);
     --section-height: 1080px;
+    --section-width: 100%;
 }
 
-body, html{
-    width: 100%;
-}
 
 .container-fluid {
     padding-right:0;
     padding-left:0;
-    margin-right:auto;
-    margin-left:auto;
+    margin-right:0;
+    margin-left:0;
     margin-top: 120px;
  }
+
+.filter-margin {
+    margin: 0px !important;
+    padding: 0px !important;
+}
 
  .link-font{
     font-family: 'Montserrat', sans-serif;
@@ -26,45 +29,56 @@ body, html{
     color: gray;
  }
 
+ .link-margin {
+    flex-grow: 0 !important;
+    margin-right: 5%;
+    margin-left: auto;
+    width: max-content;
+ }
+
 
 .navbar {
     background-image: var(--bg-img-stripes);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
 .header-title {
-    margin-top: 150px;
+     margin-top: 150px; 
 }
 
 .home {
     background-image: var(--bg-img-stripes);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-repeat: repeat;
     height: var(--section-height);
+    width: var(--section-width);
+    background-size: 100%;
     border-bottom: 2px solid red;
 }
 
 .about {
     background-image: var(--bg-img-stripes);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-repeat: repeat;
     height: var(--section-height);
+    width: var(--section-width);
+    background-size: 100%;
     border-bottom: 2px solid blue;
 }
 
 .projects {
     background-image: var(--bg-img-stripes);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-repeat: repeat;
     height: var(--section-height);
+    width: var(--section-width);
+    background-size: 100%;
     border-bottom: 2px solid green;
 }
 
 .contact {
     background-image: var(--bg-img-stripes);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-repeat: repeat;
     height: var(--section-height);
+    width: var(--section-width);
+    background-size: 100%;
     border-bottom: 2px solid orange;
 }
