@@ -6,7 +6,7 @@ $(document).ready(function() {
     scrollLink.click(function(event) {
         event.preventDefault();
         $('body,html').animate({
-        scrollTop: $(this.hash).offset().top
+        scrollTop: $(this.hash).offset().top - $(".navbar").height()
         }, 1000);
     });
 
@@ -15,11 +15,8 @@ $(document).ready(function() {
         var scrollbarLocation = $(this).scrollTop();
         
         scrollLink.each(function() {
-
-            console.log("offset" + $(this.hash).offset().top);
-            console.log("navheight" + $(".navbar").outerHeight());
         
-        var sectionOffset = $(this.hash).offset().top - $(".navbar").outerHeight();
+        var sectionOffset = $(this.hash).offset().top - 20;
         
         if ( sectionOffset <= scrollbarLocation ) {
             $(this).parent().addClass('active');
