@@ -27,7 +27,13 @@ body, html{
 
 
 .navbar {
-    background-image: var(--bg-img);
+    background-image: var(--bg-img-stripes);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-title {
+    margin-top: 150px;
 }
 
 .home {
