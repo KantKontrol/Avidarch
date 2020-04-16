@@ -1,11 +1,30 @@
 :root {
+    --bg-img-stripes: url(../img/BackgroundW_Stripes.png);
     --bg-img: url(../img/Background.png);
     --section-height: 1080px;
+    --section-width: 100%;
 }
 
 body, html{
     width: 100%;
 }
+
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto
+ }
+
+ .link-font{
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    color: darkgray;
+ }
+
+ .link-font:hover {
+    color: gray;
+ }
 
 
 .navbar {
@@ -13,25 +32,33 @@ body, html{
 }
 
 .home {
-    background-image: var(--bg-img);
+    background-image: var(--bg-img-stripes);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     height: var(--section-height);
     border-bottom: 2px solid red;
 }
 
 .about {
-    background-image: var(--bg-img);
+    background-image: var(--bg-img-stripes);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     height: var(--section-height);
     border-bottom: 2px solid blue;
 }
 
 .projects {
-    background-image: var(--bg-img);
+    background-image: var(--bg-img-stripes);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     height: var(--section-height);
     border-bottom: 2px solid green;
 }
 
 .contact {
-    background-image: var(--bg-img);
+    background-image: var(--bg-img-stripes);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     height: var(--section-height);
     border-bottom: 2px solid orange;
 }
