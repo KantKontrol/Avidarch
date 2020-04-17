@@ -6,7 +6,7 @@ $(document).ready(function() {
     scrollLink.click(function(event) {
         event.preventDefault();
         $('body,html').animate({
-        scrollTop: ($(this.hash).offset().top - $(".navbar").height()) - 20
+        scrollTop: ($(this.hash).offset().top - $(".navbar").height()) 
         }, 1000);
     });
 

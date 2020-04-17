@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
+     <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand" href="#"><span><img class="img-fluid" src="./assets/img/navbar/LogoNav.png" alt="David Labato"></span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><img src="./assets/img/navbar/linkStripes.png"></span>
@@ -35,7 +35,7 @@
 
           </ul>
         </div>
-      </nav>
+      </nav> 
 
 
     <div class="container-fluid">
@@ -46,9 +46,9 @@
                     <div class="header-title anim-header"><span><img class="img-fluid" src="./assets/img/home/Portfolio Header.png"></span></div>
 
                     <div class="boxContainerBottom">
-                        <img class="img-fluid anim-box-up boxBottom" src="./assets/img/home/Red Bar Home.png" alt="red square"><!--
-                        --><img class="img-fluid anim-box-up boxBottom" src="./assets/img/home/Yellow Bar Home.png" alt="red square"><!--
-                        --><img class="img-fluid anim-box-up boxBottom" src="./assets/img/home/Blue Bar Home.png" alt="red square">                      
+                        <img class="img-fluid anim-box-up boxBottom" data-delay="1.6s" src="./assets/img/home/Red Bar Home.png" alt="red square"><!--
+                        --><img class="img-fluid anim-box-up boxBottom" data-delay="2s" src="./assets/img/home/Yellow Bar Home.png" alt="Yellow square"><!--
+                        --><img class="img-fluid anim-box-up boxBottom" data-delay="1s" src="./assets/img/home/Blue Bar Home.png" alt="Blue square">                      
                     </div>
                 </div>
             </div>
@@ -57,10 +57,15 @@
         <div class="row filter-margin">
             <div class="col-sm-12 filter-margin">
                 <div id="about">
+                    <div class="boxContainerTop">
+                        <img class="img-fluid anim-box-down boxTop" data-delay="1.6s" src="./assets/img/about/Red Bar About.png" alt="red square"><!--
+                        --><img class="img-fluid anim-box-down boxTop" data-delay="2s" src="./assets/img/about/Yellow Bar About.png" alt="Yellow square"><!--
+                        --><img class="img-fluid anim-box-down boxTop" data-delay="1s" src="./assets/img/about/Blue Bar About.png" alt="Blue square">                      
+                    </div>
 
                     <div class="header-title anim-header"><span><img class="img-fluid" src="./assets/img/about/About Header.png"></span></div> 
     
-    
+                    
                 </div>
             </div>
         </div>
@@ -100,5 +105,6 @@
     <!-- Custom JS-->
     <script src="assets/js/autoScroll.js"></script>
     <script src="assets/js/header-slide.js"></script>
+    <script src="assets/js/boxAnim.js"></script>
 </body>
 </html>

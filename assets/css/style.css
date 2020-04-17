@@ -44,7 +44,7 @@
 
 .header-title {
     position: absolute;
-    margin-top: 150px; 
+    top: 218px;
 }
 
 .anim-header {
@@ -64,7 +64,14 @@
     width: max-content;
     align-items: baseline;
     
-    
+}
+
+.boxContainerTop {
+    position: relative;
+    display: block;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .boxBottom {
@@ -72,6 +79,12 @@
     width: max-content;
     vertical-align: bottom !important;
    
+}
+
+.boxTop {
+    display: inline-block;
+    width: max-content;
+    vertical-align: top;
 }
 
 
@@ -130,9 +143,22 @@
 
 @keyframes boxAnimTop {
     from {
-        transform: translateY(-400px);
+        transform: translateY(50px);
+        
     }
     to{
         transform: translateX(0);
+     
+    }
+}
+
+@keyframes boxAnimBottom {
+    from {
+        transform: translateY(-150px);
+        
+    }
+    to{
+        transform: translateX(0);
+        
     }
 }
