@@ -11,7 +11,6 @@
     padding-left:0;
     margin-right:0;
     margin-left:0;
-    margin-top: 120px;
  }
 
 .filter-margin {
@@ -39,7 +38,15 @@
 .navbar {
     background-image: var(--bg-img-stripes);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%; 
+}
+
+.navbar-bigTitle {
+    
+}
+
+.navbar-smallTitle {
+    
 }
 
 .header-title {
@@ -55,15 +62,20 @@
 
 }
 
+
+
 .boxContainerBottom  {
-    position: relative;
+    position: absolute;
     display: block;
-    margin-top: auto;
-    margin-right: auto;
-    margin-left: auto;
+    bottom: 0;
+    left: 50%;
+
     width: max-content;
-    align-items: baseline;
+}
+
+.boxBottom {
     
+    vertical-align: bottom !important;
 }
 
 .boxContainerTop {
@@ -72,13 +84,6 @@
     margin-bottom: auto;
     margin-right: auto;
     margin-left: auto;
-}
-
-.boxBottom {
-    display: inline-block;
-    width: max-content;
-    vertical-align: bottom !important;
-   
 }
 
 .boxTop {

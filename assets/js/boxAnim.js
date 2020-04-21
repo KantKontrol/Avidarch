@@ -11,6 +11,7 @@ $(document).ready(() => {
         const observer = new IntersectionObserver((entries) => {
         
             entries.forEach(e => {
+                
 
                 if(e.intersectionRatio > 0){
                     e.target.style.animation = `boxAnimTop ${$(e.target).data("delay")}`;
@@ -22,6 +23,7 @@ $(document).ready(() => {
             });
 
         }, {
+            rootMargin: '50px',
             threshold: 0
         });
 

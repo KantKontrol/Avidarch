@@ -7,7 +7,7 @@ $(document).ready(() => {
 
     const targets = $(".anim-header").toArray();
 
-    const observer = new IntersectionObserver(function(entries) {
+    const observer = new IntersectionObserver(function(entries, observer) {
         
         entries.forEach(e => {
             if(e.intersectionRatio > 0){
