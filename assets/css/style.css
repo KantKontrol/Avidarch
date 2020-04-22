@@ -10,7 +10,8 @@
     padding-left:0;
     margin-right:0;
     margin-left:0;
- }
+    overflow-x: hidden;
+}
 
 .filter-margin {
     margin: 0px !important;
@@ -69,7 +70,7 @@
     height: var(--section-height);
     width: var(--section-width);
     background-size: 100%;
-    border-bottom: 2px solid red;
+
 }
 
 .boxHomeRed {
@@ -113,6 +114,8 @@
     border-bottom: 2px solid blue;
 }
 
+
+
 .boxAboutRed {
     background-image: url(../img/home/RedBarHome.png);
     background-size: 100%;
@@ -137,12 +140,58 @@
     margin-bottom: auto !important;
 }
 
+.boxAboutBlue img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    width: 85%;
+    height: 80%; 
+}
+
 .pushDivTop {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
  }
+
+ #contactStyle {
+
+    position: relative;
+    background-image: var(--bg-img-stripes);
+    background-repeat: repeat;
+    height: var(--section-height);
+    width: var(--section-width);
+    background-size: 100%;
+    border-bottom: 2px solid green;
+    overflow: hidden;
+
+ }
+
+ .boxContactRed {
+    background-image: url(../img/contact/redC.png);
+    background-size: 100%;
+    width: 551px;
+    height: 672px; 
+    margin-top: auto !important;
+}
+
+.boxContactYellow {
+    background-image: url(../img/contact/yellowC.png);
+    background-size: 100%;
+    width: 567px;
+    height: 382px; 
+    margin-top: auto !important;
+}
+
+.boxContactBlue {
+    background-image: url(../img/contact/blueC.png);
+    background-size: 100%;
+    width: 551px;
+    height: 125px; 
+    margin-top: auto !important;
+}
 
 
 .boxContainerTop {
@@ -159,19 +208,6 @@
     vertical-align: top;
 }
 
-
-
-#about {
-    display: flex;
-    position: relative;
-    background-image: var(--bg-img-stripes);
-    background-repeat: repeat;
-    height: var(--section-height);
-    width: var(--section-width);
-    background-size: 100%;
-    border-bottom: 2px solid blue;
-}
-
 #projects {
     display: flex;
     position: relative;
@@ -183,16 +219,6 @@
     border-bottom: 2px solid green;
 }
 
-#contact {
-    display: flex;
-    position: relative;
-    background-image: var(--bg-img-stripes);
-    background-repeat: repeat;
-    height: var(--section-height);
-    width: var(--section-width);
-    background-size: 100%;
-    border-bottom: 2px solid orange;
-}
 
 @keyframes headerAnimation {
     from {
