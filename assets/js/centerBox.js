@@ -1,7 +1,7 @@
 $(document).ready( () => {
 
 
-    let boxesBottom = $(".boxContainerBottom").toArray();
+    let boxesBottom = $(".pushDivBottom").toArray();
 
     boxesBottom.forEach(e => {
 

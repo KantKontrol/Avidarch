@@ -2,7 +2,7 @@ $(document).ready(() => {
 
     let options = {
         rootMargin: '0px',
-        threshhold: 0
+        threshold: 0
     }
 
     const targets = $(".anim-header").toArray();

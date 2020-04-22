@@ -5,7 +5,6 @@
     --section-width: 100%;
 }
 
-
 .container-fluid {
     padding-right:0;
     padding-left:0;
@@ -41,8 +40,9 @@
     background-size: 100%; 
 }
 
+
 .navbar-bigTitle {
-    
+
 }
 
 .navbar-smallTitle {
@@ -62,21 +62,50 @@
 
 }
 
-
-
-.boxContainerBottom  {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    left: 50%;
-
-    width: max-content;
+#homeStyle {
+    position: relative;
+    height: var(--section-height);
+    max-height: var(--section-height);
+    background-image: var(--bg-img-stripes);
+    background-repeat: repeat;
+    align-items: center;
 }
 
-.boxBottom {
-    
-    vertical-align: bottom !important;
+.boxHomeRed {
+    background-image: url(../img/home/RedBarHome.png);
+    background-size: 100%;
+    width: 551px;
+    height: 568px; 
+    margin-top: auto !important;
 }
+
+.boxHomeYellow {
+    background-image: url(../img/home/YellowBarHome.png);
+    background-size: 100%;
+    width: 567px;
+    height: 250px; 
+    margin-top: auto !important;
+}
+
+.boxHomeBlue {
+    background-image: url(../img/home/BlueBarHome.png);
+    background-size: 100%;
+    width: 551px;
+    height: 768px; 
+    margin-top: auto !important;
+}
+
+.boxDiv {
+    height: 200px;
+}
+
+.pushDivBottom{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+
 
 .boxContainerTop {
     position: relative;
@@ -94,7 +123,6 @@
 
 
 #home {
-    display: flex;
     position: relative;
     background-image: var(--bg-img-stripes);
     background-repeat: repeat;
@@ -149,21 +177,17 @@
 @keyframes boxAnimTop {
     from {
         transform: translateY(50px);
-        
     }
     to{
         transform: translateX(0);
-     
     }
 }
 
 @keyframes boxAnimBottom {
     from {
-        transform: translateY(-150px);
-        
+        transform: translateY(-50px);
     }
     to{
         transform: translateX(0);
-        
     }
 }

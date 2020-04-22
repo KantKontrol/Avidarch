@@ -37,7 +37,9 @@ $(document).ready(() => {
 
         const targets = $(".anim-box-down").toArray();
 
-        const observer = new IntersectionObserver((entries) => {
+        const observer = new IntersectionObserver((entries, observer) => {
+
+            
 
             entries.forEach(e => {
 
@@ -51,6 +53,7 @@ $(document).ready(() => {
             });
 
         }, {
+            rootMargin: '-50px 0px 0px 0px',
             threshold: 0
         });
 
