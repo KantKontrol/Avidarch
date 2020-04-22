@@ -7,6 +7,7 @@ $(document).ready(() => {
     function setupSlideUp(){
 
         const targets = $(".anim-box-up").toArray();
+        
 
         const observer = new IntersectionObserver((entries) => {
         
@@ -14,6 +15,7 @@ $(document).ready(() => {
                 
 
                 if(e.intersectionRatio > 0){
+                    console.log("animate top");
                     e.target.style.animation = `boxAnimTop ${$(e.target).data("delay")}`;
                 }
                 else {

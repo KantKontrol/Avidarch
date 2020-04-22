@@ -64,11 +64,12 @@
 
 #homeStyle {
     position: relative;
-    height: var(--section-height);
-    max-height: var(--section-height);
     background-image: var(--bg-img-stripes);
     background-repeat: repeat;
-    align-items: center;
+    height: var(--section-height);
+    width: var(--section-width);
+    background-size: 100%;
+    border-bottom: 2px solid red;
 }
 
 .boxHomeRed {
@@ -95,16 +96,53 @@
     margin-top: auto !important;
 }
 
-.boxDiv {
-    height: 200px;
-}
-
 .pushDivBottom{
    position: absolute;
    bottom: 0;
    left: 0;
    right: 0;
 }
+
+#aboutStyle {
+    position: relative;
+    background-image: var(--bg-img-stripes);
+    background-repeat: repeat;
+    height: var(--section-height);
+    width: var(--section-width);
+    background-size: 100%;
+    border-bottom: 2px solid blue;
+}
+
+.boxAboutRed {
+    background-image: url(../img/home/RedBarHome.png);
+    background-size: 100%;
+    width: 551px;
+    height: 151px; 
+    margin-bottom: auto !important;
+}
+
+.boxAboutYellow {
+    background-image: url(../img/home/YellowBarHome.png);
+    background-size: 100%;
+    width: 567px;
+    height: 346px; 
+    margin-bottom: auto !important;
+}
+
+.boxAboutBlue {
+    background-image: url(../img/home/BlueBarHome.png);
+    background-size: 100%;
+    width: 551px;
+    height: 819px; 
+    margin-bottom: auto !important;
+}
+
+.pushDivTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+ }
 
 
 .boxContainerTop {
@@ -122,15 +160,6 @@
 }
 
 
-#home {
-    position: relative;
-    background-image: var(--bg-img-stripes);
-    background-repeat: repeat;
-    height: var(--section-height);
-    width: var(--section-width);
-    background-size: 100%;
-    border-bottom: 2px solid red;
-}
 
 #about {
     display: flex;
