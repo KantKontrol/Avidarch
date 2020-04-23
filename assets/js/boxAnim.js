@@ -41,8 +41,6 @@ $(document).ready(() => {
 
         const observer = new IntersectionObserver((entries, observer) => {
 
-            
-
             entries.forEach(e => {
 
                 if(e.intersectionRatio > 0){
