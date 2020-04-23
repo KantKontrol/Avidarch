@@ -5,6 +5,22 @@
     --section-width: 100%;
 }
 
+.boxHolderBot {
+    position: relative; 
+    margin-top: auto !important;
+}
+
+.boxHolderBot img {
+    position: relative;
+    width: 100%;
+}
+
+.filter-padding {
+    padding: 0px !important;
+}
+
+
+
 
 .container-fluid {
     padding-right:0;
@@ -54,7 +70,8 @@
 }
 
 .header-title {
-    
+    position: relative;
+    margin-right: 60%;
 
 }
 
@@ -80,8 +97,9 @@
     background-image: url(../img/home/RedBarHome.png);
     background-size: 100%;
     width: 551px;
-    height: 568px;
+     height: 568px; 
     margin-top: auto !important;
+    
 }
 
 .boxHomeYellow {

@@ -12,6 +12,7 @@ $(document).ready(() => {
         entries.forEach(e => {
             if(e.intersectionRatio > 0){
                 e.target.style.animation = "headerAnimation 1s";
+                //observer.unobserve(e.target);
             }
             else {
                 e.target.style.animation = "none";
