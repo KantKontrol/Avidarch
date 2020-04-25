@@ -15,6 +15,13 @@
     width: 100%;
 }
 
+.pushDivBottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+ }
+
 .boxHolderTop {
     position: relative; 
     margin-bottom: auto !important;
@@ -25,7 +32,12 @@
     width: 100%;
 }
 
-
+.pushDivTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+ }
 
 .filter-padding {
     padding: 0px !important;
@@ -34,9 +46,6 @@
 .hide-overflow {
     overflow:  hidden !important;
 }
-
-
-
 
 .container-fluid {
     padding-right:0;
@@ -109,37 +118,8 @@
 
 }
 
-.boxHomeRed {
-    background-image: url(../img/home/RedBarHome.png);
-    background-size: 100%;
-    width: 551px;
-     height: 568px; 
-    margin-top: auto !important;
-    
-}
 
-.boxHomeYellow {
-    background-image: url(../img/home/YellowBarHome.png);
-    background-size: 100%;
-    width: 567px;
-    height: 250px; 
-    margin-top: auto !important;
-}
 
-.boxHomeBlue {
-    background-image: url(../img/home/BlueBarHome.png);
-    background-size: 100%;
-    width: 551px;
-    height: 768px; 
-    margin-top: auto !important;
-}
-
-.pushDivBottom{
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   right: 0;
-}
 
 #aboutStyle {
     position: relative;
@@ -153,46 +133,6 @@
 
 
 
-.boxAboutRed {
-    background-image: url(../img/home/RedBarHome.png);
-    background-size: 100%;
-    width: 551px;
-    height: 151px; 
-    margin-bottom: auto !important;
-}
-
-.boxAboutYellow {
-    background-image: url(../img/home/YellowBarHome.png);
-    background-size: 100%;
-    width: 567px;
-    height: 346px; 
-    margin-bottom: auto !important;
-}
-
-.boxAboutBlue {
-    background-image: url(../img/home/BlueBarHome.png);
-    background-size: 100%;
-    width: 551px;
-    height: 819px; 
-    margin-bottom: auto !important;
-}
-
-.boxAboutBlue img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15%;
-    width: 85%;
-    height: 80%; 
-}
-
-.pushDivTop {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
- }
-
  #contactStyle {
 
     position: relative;
@@ -205,45 +145,6 @@
     overflow: hidden;
 
  }
-
- .boxContactRed {
-    background-image: url(../img/contact/redC.png);
-    background-size: 100%;
-    width: 551px;
-    height: 672px; 
-    margin-top: auto !important;
-}
-
-.boxContactYellow {
-    background-image: url(../img/contact/yellowC.png);
-    background-size: 100%;
-    width: 567px;
-    height: 382px; 
-    margin-top: auto !important;
-}
-
-.boxContactBlue {
-    background-image: url(../img/contact/blueC.png);
-    background-size: 100%;
-    width: 551px;
-    height: 125px; 
-    margin-top: auto !important;
-}
-
-
-.boxContainerTop {
-    position: relative;
-    display: block;
-    margin-bottom: auto;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.boxTop {
-    display: inline-block;
-    width: max-content;
-    vertical-align: top;
-}
 
 #projects {
     display: flex;
