@@ -9,14 +9,15 @@ $(document).ready(() => {
         const targets = $(".anim-box-up").toArray();
         
 
-        const observer = new IntersectionObserver((entries) => {
+        const observer = new IntersectionObserver((entries, observer) => {
         
             entries.forEach(e => {
                 
 
                 if(e.intersectionRatio > 0){
-                    console.log("animate top");
+                    
                     e.target.style.animation = `boxAnimTop ${$(e.target).data("delay")}`;
+                    observer.unobserve(e.target);
                 }
                 else {
                     e.target.style.animation = "none";
@@ -43,8 +44,9 @@ $(document).ready(() => {
 
             entries.forEach(e => {
 
-                if(e.intersectionRatio > 0){
+                if(e.isIntersecting){
                     e.target.style.animation = `boxAnimBottom ${$(e.target).data("delay")}`;
+                    observer.unobserve(e.target);
                 }
                 else {
                     e.target.style.animation = "none";
@@ -53,7 +55,7 @@ $(document).ready(() => {
             });
 
         }, {
-            rootMargin: '-50px 0px 0px 0px',
+            rootMargin: '0px 0px -50px 0px',
             threshold: 0
         });
 
