@@ -15,8 +15,24 @@
     width: 100%;
 }
 
+.boxHolderTop {
+    position: relative; 
+    margin-bottom: auto !important;
+}
+
+.boxHolderTop img {
+    position: relative;
+    width: 100%;
+}
+
+
+
 .filter-padding {
     padding: 0px !important;
+}
+
+.hide-overflow {
+    overflow:  hidden !important;
 }
 
 
@@ -70,7 +86,7 @@
 }
 
 .header-title {
-    position: relative;
+    position: absolute;
     margin-right: 60%;
 
 }
