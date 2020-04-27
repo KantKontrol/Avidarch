@@ -162,11 +162,11 @@
 @keyframes headerAnimation {
     from {
         visibility: hidden;
-        transform: translateX(-400px);
+        left: -400px;
     }
     to{
         visibility: visible;
-        transform: translateX(0);
+        left: 0px;
     }
 }
 
