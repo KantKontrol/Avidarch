@@ -47,8 +47,6 @@
     right: 0;
 }
 
-.carousel-inner > .carousel-item > img { width: 100%;  min-height: 800px;}
-
 .filter-padding {
     padding: 0px !important;
 }
@@ -125,6 +123,21 @@
     height: var(--section-height);
     width: var(--section-width);
     background-size: 100%;
+}
+
+
+.caroStyle {
+    position: relative;
+    margin-top: 40px;
+}
+
+.caroStyle img {
+    position: relative;
+}
+
+.caroCaption {
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 5px black;
 }
 
 #contactStyle {
