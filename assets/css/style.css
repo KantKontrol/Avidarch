@@ -141,6 +141,21 @@
     
 }
 
+.lineDiv {
+    border-left: 10px solid #51C6DC;
+    padding-left: 10px;
+    position: relative;
+    height: 100%;
+    width: 800px;
+}
+
+.aboutText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    color: white;
+    text-shadow: 2px 2px 5px #51C6DC;
+}
+
 .navbar {
     background-color: transparent;
 }
