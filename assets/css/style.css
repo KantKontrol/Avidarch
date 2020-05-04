@@ -112,11 +112,22 @@
     width: max-content;
  }
 
+ #quoteDisplay{
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    position: absolute;
+    top: 300px;
+    right: 20vw;
+    left: 20vw;
+    height: 200px;
+    z-index: 2;
+    display: none;
+ }
+
 .navbar {
-    /* background-image: var(--bg-img-stripes);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 100px; */
     background-color: transparent;
 }
 

@@ -6,6 +6,7 @@ $(document).ready(() => {
         let pos1 = Math.floor(vh * .10);
         let pos2 = Math.floor(vh * .18);
         let pos3 = Math.floor(vh * .15);
+        let pos4 = Math.floor(vh * .07);
         
         headers.forEach(h => {
             switch($(h).attr("id")){
@@ -19,10 +20,10 @@ $(document).ready(() => {
                     $(h).css("top", pos1); 
                     break;
                 case("contHeader"):
-                    $(h).css("top", pos1);
+                    $(h).css("top", pos4);
                     break;
                 default:
-                    console.log("Failed to position headers");
+                    break;
             }
         });
     }
