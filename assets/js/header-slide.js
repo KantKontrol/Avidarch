@@ -5,7 +5,7 @@ $(document).ready(() => {
 
         let pos1 = Math.floor(vh * .10);
         let pos2 = Math.floor(vh * .18);
-        let pos3 = Math.floor(vh * .15);
+        let pos3 = Math.floor(vh * .20);
         let pos4 = Math.floor(vh * .07);
         
         headers.forEach(h => {
