@@ -71,6 +71,7 @@
 
 .linkBackShadow {
     background-image: url("../img/navbar/Link_Border.png");
+    border-radius: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right:10px;
@@ -99,7 +100,7 @@
  .link-font{
     font-family: 'Montserrat', sans-serif;
     font-size: x-large;
-    color: white;
+    color: lightgray;
  }
 
  .link-font:hover {
@@ -154,22 +155,29 @@
     right: 80px;
     width: 400px;
     z-index: 2;
-    
 }
 
 .lineDiv {
-    border-left: 10px solid #51C6DC;
+    border-left: 10px solid white;
     padding-left: 10px;
     position: relative;
     height: 100%;
-    width: 800px;
+    width: 1200px;
 }
 
 .aboutText {
+    display: block;
     font-family: 'Montserrat', sans-serif;
     font-size: x-large;
     color: white;
     text-shadow: 2px 2px 5px #51C6DC;
+    margin-top: 10px;
+}
+
+.aboutTextImage {
+    background-image: url("../img/about/dave-grad.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .navbar {
@@ -211,11 +219,16 @@
 
 .caroStyle {
     position: relative;
-    margin-top: 40px;
+    margin-top: 60px;
+  
 }
 
 .caroStyle img {
     position: relative;
+    margin-top: 125px;
+    width: 1306px;
+    height: 726px;
+    
 }
 
 .caroCaption {
@@ -245,6 +258,7 @@
         left: 0px;
     }
 }
+
 
 @keyframes boxAnimTop {
     from {
